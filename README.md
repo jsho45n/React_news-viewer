@@ -9,6 +9,12 @@
 ## 유의해야 할 점
 - useEffect(렌더링 될 때 실행되는 함수)에 등록하는 함수는 async로 작성하면 안 된다는 점이다. 그 대신 함수 내부에 async 함수를 따로 만들어 주   어야 한다.
 
-- useEffect(() => { // 페이지가 렌더링 될 때 이 함수 실행
-        // async를 사용하는 함수 따로 선언
-        const fetchData = async () => {
+- 예 : useEffect(() => { // 페이지가 렌더링 될 때 이 함수 실행 <br>
+        // async를 사용하는 함수 따로 선언 <br>
+        const fetchData = async () => { <br>
+         try { 
+                 .....
+              } catch {
+                 ....
+          };
+                
