@@ -5,3 +5,6 @@
 - SPA (리액트 라우터) / NavLink
 - styled component
 - axios
+
+## 유의해야 할 점
+- useEffect(렌더링 될 때 실행되는 함수)에 등록하는 함수는 async로 작성하면 안 된다는 점이다. 그 대신 함수 내부에 async 함수를 따로 만들어 주   어야 한다.
